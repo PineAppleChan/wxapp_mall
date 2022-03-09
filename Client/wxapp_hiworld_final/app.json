@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sections/sections",
+    "pages/good/good",
+    "pages/mine/mine",
+    "pages/sell/sell",
+    "pages/authorize/authorize",
+    "pages/myinfo_1/myinfo_1",
+    "pages/myinfo_2/myinfo_2",
+    "pages/myinfo_3/myinfo_3",
+    "pages/myinfo_4/myinfo_4",
+    "pages/myinfo_5/myinfo_5",
+    "pages/myinfo_6/myinfo_6"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "松手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "component/tabbar/icon/home_selected.png",
+        "iconPath": "component/tabbar/icon/home.png",
+        "pagePath": "pages/index/index",
+        "text": "我要买"
+      },
+      {
+        "selectedIconPath": "component/tabbar/icon/mine_selected.png",
+        "iconPath": "component/tabbar/icon/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#E74552"
+  },
+  "sitemapLocation": "sitemap.json"
+}

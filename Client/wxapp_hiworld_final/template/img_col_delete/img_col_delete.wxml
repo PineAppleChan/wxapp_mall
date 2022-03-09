@@ -1,0 +1,68 @@
+<template name="img_col">
+  <view class="img_container">
+
+    <!--商品左列-->
+    <view class="img_col1">
+      <view class="img_col_item" wx:for="{{col1}}" wx:key="id">
+        
+        <view class="img_cell">
+          <image class="user_avatar" src="{{item.uAva}}"></image>
+          <text class="user_nickname">{{item.uName}}</text>
+          <view bindtap='delete_good' id='{{item._id}}'>
+           <image class="delete_good_logo" src="/images/gtab/delete.png" style='width:18px;height:18px' />
+          </view>
+          <!-- <text class="user_location">{{item.uPlace==0?'湖区':'牌区'}}</text> -->
+        </view>
+
+        <!--物品图片-->
+        <image src="{{item.imgList[0]}}" bindtap='onGoodTap' id='{{item._id}}' style="width:100%" mode="widthFix"></image>
+        <!--物品图片-->
+
+        <text class="item_description">{{item.title}}</text>
+        <view class="img_cell">
+          <text class="item_price">￥{{item.price}}</text>
+          <text class="item_price_before">￥{{item.oriPrice}}</text>
+          <text class="item_date">{{item.createAt}}</text>
+        </view>
+
+      </view>
+    </view>
+    <!--商品左列-->
+
+    <!--商品右列-->
+    <view class="img_col2">
+      <view class="img_col_item" wx:for="{{col2}}" wx:key="id">
+        <view class="img_cell">
+          <image class="user_avatar" src="{{item.uAva}}"></image>
+          <text class="user_nickname">{{item.uName}}</text>
+          <view bindtap='delete_good' id='{{item._id}}'>
+           <image class="delete_good_logo" src="/images/gtab/delete.png" style='width:18px;height:18px' />
+          </view>
+          <!-- <text class="user_location">{{item.uPlace==0?'湖区':'牌区'}}</text> -->
+        </view>
+
+        <!--物品图片-->
+        <image src="{{item.imgList[0]}}" bindtap='onGoodTap' id='{{item._id}}' style="width:100%" mode="widthFix"></image>
+        <!--物品图片-->
+
+        <text class="item_description">{{item.title}}</text>
+        <view class="img_cell">
+          <text class="item_price">￥{{item.price}}</text>
+          <text class="item_price_before">￥{{item.oriPrice}}</text>
+          <text class="item_date">{{item.createAt}}</text>
+        </view>
+
+      </view>
+    </view>
+    <!--商品右列-->
+
+    <view wx:if="{{Loading}}" style="display:flex;justify-content:center;align-items:center;margin:40rpx 0">
+      <image class="loading" src="/images/loading.png"></image>
+      <text style="color:#979795">正在载入更多...</text>
+    </view>
+    <view wx:if="{{!Loading}}" style="display:flex;justify-content:center;align-items:center;margin:40rpx 0">
+      <text style="color:#979795">没有更多了</text>
+    </view>
+  </view>
+
+</template>

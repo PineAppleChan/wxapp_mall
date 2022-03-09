@@ -1,0 +1,35 @@
+/* pages/licence/licence.wxss */
+.h1 {
+  text-align: left;
+  font-size: 16pt;
+  margin: 10px;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.title {
+  font-family: "楷体";
+  font-size: 60rpx;
+  text-align:center;
+}
+.right {
+font-family: "楷体";
+color: #ff0000; 
+font-size: 40rpx;
+float: right;
+}
+  
+.stitle {
+  font-family: "楷体";
+  font-weight:bold;
+  font-size:50rpx;
+ }
+  
+.sstitle {
+  font-family: "楷体";
+  font-weight:bold;
+  font-size:45rpx;
+  }
+  

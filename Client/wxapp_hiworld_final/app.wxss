@@ -1,0 +1,21 @@
+/**app.wxss**/
+@import "./template/index_sections/index_sections.wxss";
+@import "./template/img_col/img_col.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+text{
+  font-size: 13px;
+}
+
+page{
+  background-color:#F8F8F8;
+}
